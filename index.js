@@ -6,8 +6,14 @@ var slider = {
     sliderImg: document.querySelector('.slide-img'),//null,
 
     start: function () {
-        this.prevBtn.addEventListener('click', this.onPrevBtnClick);
-        this.nextBtn.addEventListener('click', this.onNextBtnClick);
+        let that = this;
+
+        this.prevBtn.addEventListener('click', function(e) {
+            that.onPrevBtnClick(e);
+        });
+        this.nextBtn.addEventListener('click', function(e) {
+            that.onNextBtnClick(e);
+        });
 
         this.imgUrl.push('https://i.picsum.photos/id/1024/1920/1280.jpg');
         this.imgUrl.push('https://i.picsum.photos/id/1021/2048/1206.jpg');
@@ -20,7 +26,7 @@ var slider = {
     onPrevBtnClick: function (e) {
         this.curIndex--;
         this.sliderImg.src = this.imgUrl[this.curIndex];
-        this.prevBtn.disabled = false;
+        this.nextBtn.disabled = false;
 
         if (this.curIndex === 0) {
             this.prevBtn.disabled = true;
@@ -32,7 +38,7 @@ var slider = {
         this.prevBtn.disabled = false;
 
         if (this.curIndex === (this.imgUrl.length - 1)) {
-            this.prevBtn.disabled = true;
+            this.nextBtn.disabled = true;
         }
     }
 }
