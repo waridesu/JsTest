@@ -20,10 +20,10 @@ Slider.prototype.start = function (elId) {
         that.onNextBtnClick(e);
     });
 
-    this.imgUrl.push('https://i.picsum.photos/id/1024/1920/1280.jpg');
-    this.imgUrl.push('https://i.picsum.photos/id/1021/2048/1206.jpg');
-    this.imgUrl.push('https://i.picsum.photos/id/1000/5626/3635.jpg');
-    this.imgUrl.push('https://i.picsum.photos/id/1025/4951/3301.jpg');
+    this.imgUrl.push('./img/626-536x354.jpg');
+    this.imgUrl.push('./img/919-536x354.jpg');
+    this.imgUrl.push('./img/921-536x354.jpg');
+    this.imgUrl.push('./img/988-536x354.jpg');
 
     this.sliderImg.src = this.imgUrl[this.curIndex];
     this.prevBtn.disabled= true;
@@ -74,10 +74,10 @@ var slider = {//literal for single use
             that.onNextBtnClick(e);
         });
 
-        this.imgUrl.push('https://i.picsum.photos/id/1024/1920/1280.jpg');
-        this.imgUrl.push('https://i.picsum.photos/id/1021/2048/1206.jpg');
-        this.imgUrl.push('https://i.picsum.photos/id/1000/5626/3635.jpg');
-        this.imgUrl.push('https://i.picsum.photos/id/1025/4951/3301.jpg');
+        this.imgUrl.push('./img/626-536x354.jpg');
+        this.imgUrl.push('./img/919-536x354.jpg');
+        this.imgUrl.push('./img/921-536x354.jpg');
+        this.imgUrl.push('./img/988-536x354.jpg');
 
         this.sliderImg.src = this.imgUrl[this.curIndex];
         this.prevBtn.disabled= true;

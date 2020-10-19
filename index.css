@@ -4,25 +4,27 @@ body {
 }
 .slider {
     position: relative;
-    width: 100%;
+    max-width: 1200px;
+    padding: 0 8px;
+    margin: auto;
     text-align: center;
 }
 .slider img {
-    width: 99%;
-    max-width: 1800px;
-    margin: auto;
-
+    width: 100%;
 }
 .slider button {
     position: absolute;
     top: 50%;
-    border: none;
     margin: auto;
-    background-color: #f1f1f1;
+    padding: 15px;
+    border-radius: 20%;
+    background-color: transparent;
+    border: 2px ridge white;
+    outline: none;
 }
 .next-btn {
-    right: 0.7%;
+    right: 8px;
 }
 .prev-btn {
-    left: 0.7%;
+    left: 8px;
 }
